@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+
+config CUSTOM_WIDGET_MATRIX
+    bool "Enable Matrix Animation Widget"
+    default n
+    depends on ZMK_DISPLAY && LVGL
+    help
+      Enable a custom display widget that shows a matrix-style animation
+      with falling characters/trails.
+      Requires a display and LVGL to be enabled. 
